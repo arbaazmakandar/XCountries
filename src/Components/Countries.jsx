@@ -39,7 +39,7 @@ const Countries = () => {
     fetch(API)
       .then((res) => res.json())
       .then((data) => setData(data))
-      .catch((e) => console.log(e));
+      .catch((e) => console.error(e));
   }, [API]);
 
   return (
